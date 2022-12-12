@@ -1,0 +1,209 @@
+.smallSidebar__Main{
+    display: none;
+}
+.sidebar__Main{
+    position: sticky;
+    height: 100vh;
+    background-color: #2e8ca7f2;
+    width: 200px;
+    top:0px;
+    bottom: 0;
+    /* z-index: -56; */
+}
+.sidebar__Bigmain{
+    display: flex;
+}
+
+
+.sidebar__Main nav{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.sidebar__Main h1{
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.main__Link{
+    text-decoration: none;
+}
+
+.active{
+    background-color: lightblue;
+}
+
+.single__Link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    height: 60px;
+}
+
+.single__Link:hover{
+    background-color: lightblue;
+}
+
+.single__Link .active{
+   background-color: lightblue;
+}
+
+.sidebar__Main nav .links{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 50px;
+    width: 100%;
+    /* margin-left: 20px; */
+}
+
+.sidebar__Main nav .links:hover{
+    background-color: gray;
+}
+
+.smallSideBar__Overlay{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0,.7);
+   top: 0;
+   left: 0;
+   z-index: 200;
+}
+
+.smallSideBar__Overlay nav{
+    background-color: #2e8ca7f2;
+    margin-top:  170px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width:700px){
+    .sidebar__Main{
+        display: none;
+    }
+    .smallSidebar__Main{
+        display: block;
+    }
+
+    .sidebar__Bigmain{
+        flex-direction: column;
+    }
+}
+
+
+/* sidebar section ends home section brgin */
+
+.home__Main{
+    /* background-color: red; */
+    width: 100%;
+}
+.stats__Main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+    gap:1.2rem
+}
+
+.stats__Single{
+    margin-bottom: 30px;
+}
+
+
+.stats__Coins__Grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+    gap:1.2rem
+}
+
+.stats__Coins__Mian{
+    margin-right: 20px;
+}
+
+.stats__Coins__Info p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.line{
+    height: 2px;
+    width: 100%;
+    background-color: lightgray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stats__Coins__Mian{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.news__Headers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats__News__Grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+    gap:1.2rem;
+    margin-right: 50px;
+}
+.stats__News__Main{
+    margin-right: 50px;
+}
+
+.stats__News__Footer{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-around;
+
+}
+
+.stats__News__Footer img{
+    height: 40px;
+    border-radius: 50%;
+}
+
+.stats__News__Footer p{
+    font-size: 10px;
+}
+
+.stats__News__Main{
+    margin-bottom: 40px;
+}
+
+.home__Main{
+    /* scroll-margin-left: hidden; */
+    scroll:hidden
+}
+
+@media screen and (max-width:700px){
+    .stats__Coins__Mian{
+        margin-right: 40px;
+    }
+}
+
+
+/* below stats the single coin css */
+.coin__Front{
+    display: flex;
+    justify-content: space-around;
+}
+
+.coin__Info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap:1.2rem;
+}
